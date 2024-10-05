@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Gambar</title>
+    <link rel="stylesheet" href="gaya.css">
+</head>
+<body>
+    <div class="gallery">
+        <div class="column">
+            <img src="img/Gallery/gallery01.287e5d3c.png" alt="Gallery Image 1" style="height: 329.13px; width: 192px;">
+            <img src="img/Gallery/gallery02.03f49415.png" alt="Gallery Image 2" style="height: 187.87px; width: 192px;">
+        </div>
+        <div class="column">
+            <img src="img/Gallery/gallery03.9a4aca35.png" alt="Gallery Image 3" style="height: 109.71px; width: 192px;">
+            <img src="img/Gallery/gallery04.889e1835.png" alt="Gallery Image 4" style="height: 187.87px; width: 192px;">
+            <img src="img/Gallery/gallery05.21c02d9f.png" alt="Gallery Image 5" style="height: 109.71px; width: 192px;">
+            <img src="img/Gallery/gallery06.dbd55740.png" alt="Gallery Image 6" style="height: 109.71px; width: 192px;">
+        </div>
+        <div class="column">
+            <img src="img/Gallery/gallery07.b20fe2cb.png" alt="Gallery Image 7" style="height: 329.13px; width: 192px;">
+            <img src="img/Gallery/gallery08.b13617cf.jpg" alt="Gallery Image 8" style="height: 187.87px; width: 192px;">
+        </div>
+        <div class="column">
+            <img src="img/Gallery/gallery09.fa1398c1.jpg" alt="Gallery Image 9" style="height: 187.87px; width: 192px;">
+            <img src="img/Gallery/gallery10.261b292f.jpg" alt="Gallery Image 10" style="height: 109.71px; width: 192px;">
+            <img src="img/Gallery/gallery11.ec00e4b6.jpg" alt="Gallery Image 11" style="height: 109.71px; width: 192px;">
+            <img src="img/Gallery/gallery12.2ead4e4c.jpg" alt="Gallery Image 12" style="height: 109.71px; width: 192px;">
+        </div>
+        <div class="column">
+            <img src="img/Gallery/gallery13.bc4d0dbf.jpg" alt="Gallery Image 13" style="height: 109.71px; width: 192px;">
+            <img src="img/Gallery/gallery14.5c5bf760.jpg" alt="Gallery Image 14" style="height: 109.71px; width: 192px;">
+            <img src="img/Gallery/gallery15.bb0d6d03.jpg" alt="Gallery Image 15" style="height: 109.71px; width: 192px;">
+            <img src="img/Gallery/gallery16.1e18ab4c.jpg" alt="Gallery Image 16" style="height: 187.87px; width: 192px;">
+        </div>
+    </div>
+        <script>
+           //Nomor 1
+            // function countEvenNumbers(start, x, end) {
+            //     let count = [];
+            //     for (let i = start; i <= end; i+=x) {
+        
+            //         if (i % 2 === 0) {
+            //             count.push(i);
+            //         }
+            //     }
+            //     return count;
+            //     console.log("bilangan genap :", count.join(","));    
+            // }
+            // console.log(countEvenNumbers(1, 3, 20)); 
+
+            //Nomor 2
+        //     function hitungHargaAkhir() {
+        //     let hargaAwal = parseFloat(prompt("Masukkan harga barang:"));
+        //     let jenisBarang = prompt("Masukkan jenis barang (Elektronik, Pakaian, Makanan, Lainnya):").toLowerCase();
+
+        //     let diskonPersen = 0;
+        //     switch (jenisBarang) {
+        //         case 'elektronik':
+        //             diskonPersen = 10;
+        //             break;
+        //         case 'pakaian':
+        //             diskonPersen = 20;
+        //             break;
+        //         case 'makanan':
+        //             diskonPersen = 5;
+        //             break;
+        //         default:
+        //             diskonPersen = 0;
+        //             return;
+        //     }
+
+        //     let diskon = (diskonPersen / 100) * hargaAwal;
+        //     let hargaAkhir = hargaAwal - diskon;
+
+        //     console.log(`Harga awal: Rp${hargaAwal}`);
+        //     console.log(`Diskon: ${diskonPersen}%`);
+        //     console.log(`Harga setelah diskon: Rp${hargaAkhir}`);
+        // }
+        // hitungHargaAkhir();
+
+
+        //Nomor 3
+        // function hitungHariYangAkanDatang(hariSekarang, jumlahHari) {
+        //     const hariDalamSeminggu = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
+
+
+        //     const indexHariSekarang = hariDalamSeminggu.indexOf(hariSekarang);
+
+        //     if (indexHariSekarang === -1) {
+        //         console.log("Hari tidak valid. Mohon masukkan hari yang benar.");
+        //         return;
+        //     }
+
+        //     const totalHari = (indexHariSekarang + jumlahHari) % 7; 
+        //     const hariAkhir = hariDalamSeminggu[totalHari];
+
+        //     console.log(`Hari ini: ${hariSekarang}`);
+        //     console.log(`Setelah ${jumlahHari} hari, hari akan menjadi: ${hariAkhir}`);
+        // }
+
+        // hitungHariYangAkanDatang('Jumat', 1000);
+
+        //Nomor 4
+        function angkarandom() {
+            return 50;
+        }
+
+        function tebakAngka() {
+            const angkaRandom = angkarandom(); 
+            let tebakan;
+            let jumlahTebakan = 0;
+
+            console.log("Permainan Tebak Angka dimulai!");
+            console.log("Masukkan angka antara 1 sampai 100 di console log (gunakan 'prompt').");
+
+            do {
+                tebakan = parseInt(prompt("Masukkan salah satu dari angka 1 sampai 100:"));
+                
+                if (isNaN(tebakan) || tebakan < 1 || tebakan > 100) {
+                    console.log("Tolong masukkan angka yang valid antara 1 dan 100.");
+                    continue;
+                }
+                jumlahTebakan++;
+
+                if (tebakan > angkaRandom) {
+                    console.log(`Tebakan ${tebakan} terlalu tinggi! Coba lagi.`);
+                } else if (tebakan < angkaRandom) {
+                    console.log(`Tebakan ${tebakan} terlalu rendah! Coba lagi.`);
+                } else {
+                    console.log(`Selamat! Kamu berhasil menebak angka ${angkaRandom} dengan benar.`);
+                }
+            } while (tebakan !== angkaRandom); 
+            console.log(`Kamu berhasil menebak angka dengan benar setelah ${jumlahTebakan}x percobaan.`);
+        }
+
+        tebakAngka();
+    
+        </script>
+    </body>
+    </html>
+</body>
+</html>

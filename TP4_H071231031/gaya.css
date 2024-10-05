@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.gallery {
+    display: flex;
+    width: 933px;
+    height: 952px;
+    overflow: hidden;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    object-fit: cover; /* Memastikan gambar terisi dengan baik dalam ukuran */
+    margin: 0; /* Menghapus margin antar gambar */
+}
