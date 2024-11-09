@@ -1,0 +1,100 @@
+@font-face {
+  font-family: 'HYWenHei';
+  src: url(public/zhcn.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar styling */
+.navbar {
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: rgba(0, 0, 0, 0); /* Transparan untuk efek awal */
+  color: #f9f9f9; /* Warna teks cerah */
+  font-family: 'HYWenHei', sans-serif; /* Gaya font tema Genshin */
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2); /* Tambahkan border bawah transparan */
+}
+
+/* Navbar berubah saat di-scroll */
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.8); /* Efek latar belakang lebih gelap saat di-scroll */
+  border-bottom: 2px solid #98A5FA; /* Warna biru muda sebagai aksen */
+}
+
+/* Logo styling */
+.navbar .logo img {
+  height: 30px; 
+  width: auto;
+  position: absolute;
+  left: 49px;
+  bottom: 20px;
+  filter: drop-shadow(0 0 10px rgba(211, 222, 6, 0.5)); /* Efek glow pada logo */
+}
+
+
+/* Link styling */
+.navbar ul {
+  list-style: none;
+  display: flex;
+  position: absolute;
+  right: 100px;
+}
+
+.navbar ul li {
+  margin-left: 50px;
+}
+
+.navbar ul li a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.3rem;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+/* Hover effect Genshin pada link */
+.navbar ul li a:hover {
+  color: #98A5FA;
+}
+
+/* Efek garis bawah animasi pada hover */
+.navbar ul li a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #98A5FA;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar ul li a:hover::after {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+/* Content styling */
+.content {
+  padding-top: 100px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #f9f9f9;
+}
+

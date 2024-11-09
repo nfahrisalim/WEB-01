@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'HYWenHei';
+    src: url(public/zhcn.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+/* Basic footer styling */
+.footer {
+    background: linear-gradient(135deg, #282828, #3a3a3a);
+    padding: 20px 0;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Footer content styling */
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Footer text styling */
+#fcopy {
+    font-size: 0.9rem;
+    color: #a9a9a9;
+    margin: 0;
+}
+
+/* Social media icons styling */
+.social-media {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon img {
+    width: 35px;
+    height: 35px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: grayscale(100%);
+}
+
+.social-icon img:hover {
+    transform: scale(1.1);
+    filter: grayscale(0%);
+}
+
+/* Additional footer hover effects */
+.footer:hover #fcopy {
+    color: #f0f0f0;
+}

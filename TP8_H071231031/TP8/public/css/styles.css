@@ -1,0 +1,218 @@
+@font-face {
+    font-family: 'HYWenHei';
+    src: url(public/zhcn.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    font-family: 'HYWenHei', Arial, sans-serif;
+    color: #f4f4f4;
+    background-color: #2e3440;
+}
+
+/* Styling untuk latar belakang */
+.background {
+    background-image: url('images/Background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+/* Styling untuk teks utama */
+.content {
+    position: relative;
+    z-index: 1;
+    font-size: 2rem;
+    color: #e6e6fa;
+}
+
+#h1home {
+    font-family: 'HYWenHei';
+    color: #ffd700; /* Warna emas untuk kesan elegan */
+    margin-top: 20px;
+    text-align: left;
+    position: absolute;
+    right: 150px;
+    bottom: 100px;
+    font-size: 100px;
+}
+
+#phome {
+    font-family: 'HYWenHei';
+    font-size: 40px;
+    text-align: left;
+    position: absolute;
+    white-space: nowrap;
+    right: 0px;
+    bottom: -20px;
+}
+
+#conab {
+    background-color: rgba(50, 70, 112, 0.7); /* Warna latar dengan transparansi */
+    color: #f9f9f9;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    max-width: 1300px;
+    text-align: center;
+    position: relative;
+}
+
+#abh1 {
+    font-family: 'HYWenHei';
+    font-size: 50px;
+    margin: 0;
+    color: #ffd700; /* Warna emas */
+}
+
+#abh2 {
+    font-size: 1.5em;
+    font-family: 'HYWenHei';
+    color: #ffd700;
+    margin-top: 0;
+    font-size: 50px;
+}
+
+#abp {
+    font-size: 25px;
+    line-height: 1.6;
+    color: #e0e0e0;
+    text-align: justify;
+}
+
+#conab::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('images/genshin-overlay.png'); /* Pattern overlay ala Teyvat */
+    opacity: 0.1;
+    border-radius: 15px;
+}
+
+#btncon1, #btnconform {
+    border-radius: 20px;
+    width: 300px;
+    height: 40px;
+    color: #ffffff;
+    background-color: rgba(152, 165, 250, 1);
+    font-size: 35px;
+    border-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+#btncon1:hover, #btnconform:hover {
+    background-color: #a0a6f5; /* Warna lebih cerah saat di-hover */
+}
+
+input, textarea {
+    pointer-events: auto;
+    background-color: #3b4252;
+    color: #ffffff;
+    border: 2px solid #4c566a;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+textarea {
+    height: 160px;
+    resize: none; /* Menjaga ukuran tetap */
+}
+
+.social-media {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    gap: 15px;
+    color: #ffd700; /* Warna emas untuk ikon media sosial */
+}
+
+.social-media a {
+    color: inherit;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #e0af3d; /* Warna lebih terang saat di-hover */
+}
+
+
+/* Genshin Impact theme styling */
+.genshin-theme {
+    background: radial-gradient(circle, #3c5d99, #1f2b4c);
+    color: #e0f7fa;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.genshin-heading {
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    color: #e0f7fa;
+    margin-bottom: 10px;
+}
+
+.genshin-description {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    color: #b0e0e6;
+    margin-bottom: 20px;
+}
+
+.genshin-button {
+    background: #4c6b92;
+    color: #e0f7fa;
+    border: none;
+    padding: 10px 20px;
+    font-family: 'Cinzel', serif;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.genshin-button:hover {
+    background: #6c8bbc;
+    transform: scale(1.05);
+}
+
+.genshin-form {
+    background: #2e4057;
+    padding: 30px;
+    border-radius: 12px;
+    color: #e0f7fa;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.genshin-label {
+    font-weight: bold;
+    color: #b0e0e6;
+}
+
+.genshin-input, .genshin-textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #4c6b92;
+    background: #3c4a5b;
+    color: #e0f7fa;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.genshin-input:focus, .genshin-textarea:focus {
+    outline: none;
+    border-color: #6c8bbc;
+}

@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+}
+
+.container .card {
+    width: 400px;
+    background-color: #F6F3EB;
+    position: relative;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+    border-radius: 20px;
+}
+
+.container .card .form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .card .left-side {
+    background-color: #108346;
+    padding: 20px 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: #F6F3EB;
+    text-align: center;
+}
+
+.left-heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.steps-content p {
+    font-size: 14px;
+}
+
+.container .card .right-side {
+    padding: 20px 30px;
+    background-color: #F6F3EB;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.input-text {
+    margin-bottom: 20px;
+}
+
+.input-div {
+    position: relative;
+    width: 100%;
+}
+
+.input-div input {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: 0;
+    border-radius: 5px;
+    border: 1px solid #cbced4;
+    padding: 0 10px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.input-div span {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    font-size: 14px;
+    color: #000;
+    transition: all 0.3s ease;
+}
+
+.input-div input:focus ~ span,
+.input-div input:not(:placeholder-shown) ~ span {
+    top: -10px;
+    left: 10px;
+    font-size: 12px;
+    padding: 0 4px;
+    background: #F6F3EB;
+}
+
+.button_space {
+    display: flex;
+    gap: 20px;
+    justify-content: center; /* Menyelaraskan tombol di tengah */
+}
+
+.buttons button {
+    width: 140%;
+    height: 40px;
+    background-color: #002053;
+    border: none;
+    color: #F6F3EB;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buttons button:hover {
+    background-color: #064078;
+}

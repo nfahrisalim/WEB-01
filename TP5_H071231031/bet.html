@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blackjack by Dissent</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="index.js" defer></script>
+</head>
+
+<body>
+  <div class="video-background">
+    <video id="backgroundVideo" autoplay loop muted playsinline>
+      <source src="imgs/Bet.mp4" type="video/mp4">
+      Browser Anda tidak mendukung tag video.
+    </video>
+  </div>
+
+  <div class="chip-container">
+    <div class="chip-buttons">
+      <img class="chip-button" src="imgs/100& Chips.png" alt="Chip 100 Dollar" data-bet="100">
+      <img class="chip-button" src="imgs/200$ Chips.png" alt="Chip 200 Dollar" data-bet="200">
+      <img class="chip-button" src="imgs/2000$ Chips.png" alt="Chip 2000 Dollar" data-bet="2000">
+      <img class="chip-button" src="imgs/5000$ Chips.png" alt="Chip 5000 Dollar" data-bet="5000">
+    </div>
+  </div>
+
+  <div class="balance-info">
+    <p>Uang <strong id="available-money">$5000</strong></p>
+    <p>Bet <strong id="bet-amount">Belum ada taruhan</strong></p>
+  </div>
+
+  <div class="play-container">
+    <img id="playButton" class="play-button" src="imgs/PLAY.png" alt="Play Button">
+</div>
+</body>
+</html>

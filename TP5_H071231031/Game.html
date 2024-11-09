@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blackjack by Dissent</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="index.js" defer></script>
+</head>
+
+<body>
+  <div class="video-background">
+    <video id="backgroundVideo" autoplay loop muted playsinline>
+      <source src="imgs/Board.mp4" type="video/mp4">
+      Browser Anda tidak mendukung tag video.
+    </video>
+  </div>
+
+  <div class="balance-info">
+    <p>Uang <strong id="available-money">$5000</strong></p>
+    <p>Bet <strong id="bet-amount">Belum ada taruhan</strong></p>
+  </div>
+
+
+  <div class="content">
+    <h2>Bandar: <span id="dealer-sum"></span></h2>
+    <div id="dealer-cards">
+      <img id="hidden" src="./cards/BACK.png">
+    </div>
+
+    <h2>Pemain: <span id="your-sum"></span></h2>
+    <div id="your-cards"></div>
+    
+    <div class="button-container">
+      <img id="hit" src="imgs/HIT.png" alt="Hit Button" class="game-button">
+      <img id="stay" src="imgs/STAY.png" alt="Stay Button" class="game-button">
+    </div>
+    
+    <p id="results"></p>
+  </div>
+
+  <div id="popup-container">
+    <div class="popup-text">Hasil Permainan</div>
+    <img class="popup-image" src="" alt="Popup Image">
+    <div class="popup-buttons">
+      <img id="reset-button" src="imgs/RETRY.png" alt="Reset Button" class="popup-button">
+      <img id="close-button" src="imgs/CLOSE.png" alt="Close Button" class="popup-button">
+    </div>
+    
+    <div id="gameover-container" >
+      <div class="gameover-text">Game Over! Uangmu habis.</div>
+      <img class="gameover-image" src="./imgs/HabisDuit.jpg" alt="Game Over Image">
+      <div class="gameover-buttons">
+          <img id="restart-button" src="imgs/RESTART.png" alt="Restart Button" class="gameover-button">
+      </div>
+  </div>
+</div>
+</body>
+</html>
